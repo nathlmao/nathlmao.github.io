@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Old Bad</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Old Bad</h1>
+<p>
+These are some old things I wrote that probably need to be updated. Entirely copied and pasted without rhyme or reason. Not even formatting this!
+</p>
+
+
+<p>
+1.1. Shower Thoughts | Internet/Tor Security and Privacy
+</p>
+
+<p>
+The issue is that on the Internet, nobody can be trusted - even the people that you cannot see. For example, a researcher in 2021 discovered that at minimum 25% of Tor nodes were operated by a single malicious actor, and with that actor’s position he staged sophisticated man-in-the-middle attacks to strip encryption from websites and modifying Bitcoin addresses to point to their own. Some people have theorized that this is the work of a government agency due to the impressive scale of the attack; however, this is at best speculation. Also, I don’t want to give the impression that Tor is as a whole untenable. It is likely fine for the majority of privacy-conscious users, but I want to dispel the idea that there is a silver bullet for security outside of dismantling your router.
+</p>
+
+<p>
+The best thing you can do if you want to be secure is to disable Javascript. Of course, this will break most websites, but that is the price you must pay for proper security. Javascript, even when it is functioning as intended, is malicious. In 2020, pirate website 9anime turned its users computers into a virtual botnet by sending garbage AJAX requests to a competitor site because of an ongoing feud. If you visited 9anime at all during the time frame in which this code was live, congratulations! You’ve participated in a DDoS attack. Unfortunately, this is just how the Internet functions.
+</p>
+
+<p>
+Another way to maliciously abuse connections is through tracking pixels. A few months back, I accidentally deleted a file and felt the urge to recover it. The tool I used performed a dangerously reckless restoration that recovered every file that was still present on my computer’s hard disk (which somehow corrupted my external hard drive, but that’s neither here nor there.). Sifting through the hundreds of thousands of junk files, including every image I had ever seen on that laptop, I noticed an inordinate amount of blank, 1x1 images. These tracking bits are simply small images hosted on a server. Your computer will automatically download the image, but to do so means that the computer must request the image from a server, which can be ANY server. So you can just add a bit of metadata to the request, serve the image across multiple different pages (perhaps through advertising?) and the server operator is capable of tracking a single user across multiple pages, allowing for things like targeted advertisements to become possible. The astute among you may recognize that there’s nothing special about a 1x1 pixel, and that any web element could be used to perform this magic trick - and you’d be right. So, it’s not a bad idea to tighten up your uBlock Origin settings to block things like remote fonts.
+1.2. Shower Thoughts |Artificial Intelligence, Bioethics
+</p>
+
+<p>
+It is important to note that technology rarely bows to ethical concerns. In Plato’s Phaedo, Socrates recounts the tale of the Egyptian God Thamus who denounced the invention of writing. In the movie “His Girl Friday”, a man accidentally shoots another dead. A much cleverer reporter than him guides him to the idea of “production for use”: the gun was present, and it was produced to be used, so he is not at fault. The atomic bomb has proliferated, despite being universally regarded as a tool of destruction that could bring about a self-made apocalypse - yet, because the tendency of mankind is to innovate further, there are thousands of nuclear bombs that exist. Technology does not go backwards. There has yet to be a moment where an invention became no more.
+</p>
+
+<p>
+However, discussion concerning scientific topics such as eugenics and genetic modification are, at the moment, where the line is drawn; UNESCO, for example, has declared that research on the human genome should not “prevail over respect for the human rights, fundamental freedoms, and human dignity of individuals or…groups of people”. Their overall stance seems to be one of one of caution rather than outright hostility, but they understand that such transhumanist ideals could potentially wrought unintended effects upon humanity, such as expanding inequality, discrimination, or other nasty ideas.
+</p>
+
+<p>
+There is still a vocal, and largely academic push towards evolving past the human limits, often going as far as to say that it is the ethical duty of mankind to pursue solutions in overcoming life’s most persistent barriers, such as death. On the flipside, its hard to take the technological utopianism (or any utopia, even those presented by politics I wholeheartedly agree with) presented by these parties as entirely in good faith, when elements of classism and eugenicism seem to pepper their beliefs. In selecting for positive attributes for children, for example, it is in effect pushing forth the idea that a parent’s love is contingent on their innate superficial attributes, and that society does believe that a people should be selected for these attributes and that nonconformers do not have the right to be born. I think this is the aspect of biohumanism that laypeople find troubling, yet inexpressible; it is an explicitly elitist ideology in a pseudo-egalitarian era.
+</p>
+<ol class="org-ol">
+<li>Notes On Things</li>
+</ol>
+<p>
+2.1. Notes | Network Security
+</p>
+
+<p>
+Short explanation: capture as many packets as you can, try and piece together the password. Best if you can get somebody connecting to the network while you’re listening.
+</p>
+
+<p>
+Longer explanation: With the aircrack-ng suite of tools, start your wireless card in monitor mode with airmon-ng. This, if your wi-fi card supports monitoring mode, will allow your device to listen to every packet on the channel. Then, use airodump-ng - the tool that displays the information captured - to find communications with the access point. If somebody is connecting on the Finally, use aircrack-ng, passing in a wordlist to the -w flag, to obtain the passkey.
+</p>
+
+<p>
+So, I would like to take this moment to say that xkcd was wrong! While “horse correct battery staple” is only a good password under the assumption that the attacker is trying to brute-force it, but in scenarios like this where the attacker only has a chance of cracking your password if you’re using vocabulary commonly found in the dictionary.
+2.2. Notes | Modern C++ Consteval and Constinit
+</p>
+
+<p>
+The constexpr keyword indicates that the result should be calculated at compile-time; if it can’t be then the code is unformed and the compiler will throw an error.
+</p>
+
+<p>
+constexpr int square(int a) {
+    return a * a;
+}
+</p>
+
+<p>
+If viewing with Constinit assembly asserts that a variable has static initialization, i.e. zero initialization and constant initialization.
+</p>
+
+<p>
+Consteval consteval is evaluated at compile time.
+</p>
+
+<p>
+consteval int square(int n) {
+    return n * n;
+}
+</p>
+
+<p>
+constinit initializes variables with static storage duration, i.e. variables that are allocated
+</p>
+
+<p>
+constexpr implies constinit.
+2.3. Notes | Hardware Attacks: SCA
+</p>
+
+<p>
+I read this in the “Hardware Hacking Handbook,” I believe.
+</p>
+
+<p>
+A side-channel is an observable aspect of a system that reveals information within that system. Side-channel attacks are an increasing security concerns (I’ve seen some presentation on the IBM website about this) because most developers aren’t familiar with the hardware level of computers, and thus cannot possibly harden against these attacks. With computers, analyzing the physical process of the computer can reveal extraneous information. To paraphrase the example in the book, take a program that verifies a password by checking in order each digit of the inputted password and comparing it to the correct one. If one were to use an oscillope and time the delay between inputting a letter and the response, one could determine whether an inputted letter was right or wrong - cutting down the several thousand or so guesses needed to break this password to just 10 guesses for each digit.
+</p>
+<ol class="org-ol">
+<li>Misc</li>
+</ol>
+<p>
+3.1. About Me
+</p>
+
+<p>
+I’m Nathan.
+</p>
+
+<p>
+I talk about computers for some reason.
+</p>
+
+<p>
+I have an abandoned Mastodon account. Send hate-mail into the void at this address:
+</p>
+</div>
+</body>
+</html>
